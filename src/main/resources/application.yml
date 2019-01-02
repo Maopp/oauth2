@@ -3,7 +3,7 @@ spring:
     name: springdatajpa
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/springboot_oauth2?characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/springboot_oauth2?characterEncoding=utf8&serverTimezone=GMT%2B8
     driverClassName: com.mysql.jdbc.Driver
     username: root
     password: admin
