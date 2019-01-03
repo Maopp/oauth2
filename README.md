@@ -154,6 +154,11 @@ refersh_token：刷新token时所用到的授权
 tokenexpires_in：有效期（从获取开始计时，值秒后过期）
 scope：客户端的接口操作权限（read：读，write：写）
 
+## 退出登陆：
+- 访问：http://localhost:8082/oauth/logout
+- 参数：Headers [{"key":"authorization","value":"Bearer c1772af7-b2d7-4edb-8e80-7dd8a5d7b91b"}]
+- 参数说明：c1772af7-b2d7-4edb-8e80-7dd8a5d7b91b:tokenValue
+
 ## 总结：
 主要讲了SpringBoot作为框架基础上配置SpringSecurity安全框架整合OAuth2安全框架做双重安全，讲解如何通过数据库的形式获取到授
 权用户信息以及角色列表，通过内存配置的OAuth2的客户端配置来获取access_token以及如何使用access_token访问受保护的资源接口。
